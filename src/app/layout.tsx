@@ -1,3 +1,4 @@
+import React from 'react'
 import './globals.css'
 import { Inter } from 'next/font/google'
 
@@ -14,7 +15,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
+    <html lang="pt-br">
       <body className={inter.className}>{children}</body>
     </html>
   )

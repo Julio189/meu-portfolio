@@ -4,7 +4,7 @@ import Logo from './Logo'
 
 const Header = () => {
   return (
-    <header className="flex justify-between items-center fixed h-16 py-6 w-full px-[9%] bg-yellow-400">
+    <header className="flex justify-between items-center fixed top-0 left-0 py-6 w-full px-[9%] bg-primaryBgColor z-50">
       <Logo />
       <Navbar />
     </header>

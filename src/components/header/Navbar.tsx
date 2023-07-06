@@ -1,6 +1,7 @@
 import React from 'react'
 import NavbarItems from './NavbarItems'
 import { PiMoonBold } from 'react-icons/pi'
+import { RiMenu3Line } from 'react-icons/ri'
 
 const Navbar = () => {
   return (
@@ -11,9 +12,10 @@ const Navbar = () => {
         <NavbarItems navigation="/" titulo="Habilidades" />
         <NavbarItems navigation="/" titulo="Projetos" />
         <NavbarItems navigation="/" titulo="Contato" />
-      </ul>
-      <div className="ml-7 cursor-pointer">
         <PiMoonBold size={25} />
+      </ul>
+      <div className="ml-7 cursor-pointer hidden">
+        <RiMenu3Line size={25} />
       </div>
     </div>
   )

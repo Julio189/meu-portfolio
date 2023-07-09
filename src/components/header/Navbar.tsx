@@ -7,8 +7,8 @@ const Navbar = () => {
   return (
     <div className="flex items center justify-center">
       <ul className="flex gap-10">
-        <NavbarItems navigation="/" titulo="Início" />
-        <NavbarItems navigation="/" titulo="Sobre" />
+        <NavbarItems navigation="#home" titulo="Início" />
+        <NavbarItems navigation="#about" titulo="Sobre" />
         <NavbarItems navigation="/" titulo="Habilidades" />
         <NavbarItems navigation="/" titulo="Projetos" />
         <NavbarItems navigation="/" titulo="Contato" />

@@ -2,6 +2,7 @@ import React from 'react'
 import './globals.css'
 import { Inter } from 'next/font/google'
 import Header from '@/components/header/Header'
+import { FilterContextProvider } from '@/contexts/FilterContext'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -18,8 +19,10 @@ export default function RootLayout({
   return (
     <html lang="pt-br" className="scroll-smooth text-textColor">
       <body className={inter.className}>
-        <Header />
-        {children}
+        <FilterContextProvider>
+          <Header />
+          {children}
+        </FilterContextProvider>
       </body>
     </html>
   )

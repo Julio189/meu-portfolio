@@ -1,3 +1,14 @@
 {
-  "extends": "@rocketseat/eslint-config/react"
+    "env": {
+        "browser": true,
+        "es2021": true
+    },
+    "extends": "@rocketseat/eslint-config/react"
+    ,
+    "parserOptions": {
+        "ecmaVersion": "latest",
+        "sourceType": "module"
+    },
+    "rules": {
+    }
 }

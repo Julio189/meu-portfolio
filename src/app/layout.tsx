@@ -1,10 +1,13 @@
 import React from 'react'
 import './globals.css'
-import { Inter } from 'next/font/google'
+import { Poppins } from 'next/font/google'
 import Header from '@/components/header/Header'
 import { FilterContextProvider } from '@/contexts/FilterContext'
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Poppins({
+  subsets: ['latin'],
+  weight: ['300', '400', '500', '600', '700', '800', '900'],
+})
 
 export const metadata = {
   title: 'Create Next App',

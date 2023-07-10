@@ -10,7 +10,7 @@ const Navbar = () => {
         <NavbarItems navigation="#home" titulo="Início" />
         <NavbarItems navigation="#about" titulo="Sobre" />
         <NavbarItems navigation="#services" titulo="Serviços" />
-        <NavbarItems navigation="/" titulo="Projetos" />
+        <NavbarItems navigation="#projects" titulo="Projetos" />
         <NavbarItems navigation="/" titulo="Contato" />
         <PiMoonBold size={25} />
       </ul>

@@ -9,7 +9,7 @@ const Navbar = () => {
       <ul className="flex gap-10">
         <NavbarItems navigation="#home" titulo="Início" />
         <NavbarItems navigation="#about" titulo="Sobre" />
-        <NavbarItems navigation="/" titulo="Habilidades" />
+        <NavbarItems navigation="#services" titulo="Serviços" />
         <NavbarItems navigation="/" titulo="Projetos" />
         <NavbarItems navigation="/" titulo="Contato" />
         <PiMoonBold size={25} />

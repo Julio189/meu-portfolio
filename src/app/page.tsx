@@ -1,7 +1,8 @@
 import AboutSection from '@/components/sections/AboutSection'
+import ContactSection from '@/components/sections/ContactSection'
 import HomeSection from '@/components/sections/HomeSection'
 import MyServices from '@/components/sections/MyServices'
-import Projects from '@/components/sections/Projects'
+import ProjectsSection from '@/components/sections/ProjectsSection'
 
 export default function Home() {
   return (
@@ -9,7 +10,8 @@ export default function Home() {
       <HomeSection />
       <AboutSection />
       <MyServices />
-      <Projects />
+      <ProjectsSection />
+      <ContactSection />
     </>
   )
 }

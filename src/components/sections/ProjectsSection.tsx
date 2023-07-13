@@ -1,7 +1,7 @@
 import React from 'react'
 import ProjectCard from '../cards/ProjectCard'
 
-const Projects = () => {
+const ProjectsSection = () => {
   return (
     <section
       id="projects"
@@ -58,4 +58,4 @@ const Projects = () => {
   )
 }
 
-export default Projects
+export default ProjectsSection

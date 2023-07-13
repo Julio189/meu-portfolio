@@ -11,7 +11,7 @@ const Navbar = () => {
         <NavbarItems navigation="#about" titulo="Sobre" />
         <NavbarItems navigation="#services" titulo="Serviços" />
         <NavbarItems navigation="#projects" titulo="Projetos" />
-        <NavbarItems navigation="/" titulo="Contato" />
+        <NavbarItems navigation="#contact" titulo="Contato" />
         <PiMoonBold size={25} />
       </ul>
       <div className="ml-7 cursor-pointer hidden">

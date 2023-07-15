@@ -1,5 +1,6 @@
 import Button from '@/components/shared/Button'
 import SocialMedia from '@/components/shared/SocialMedia'
+import Image from 'next/image'
 import { FaInstagram, FaLinkedin } from 'react-icons/Fa'
 import { FiGithub } from 'react-icons/Fi'
 
@@ -39,7 +40,13 @@ const HomeSection = () => {
         </div>
       </div>
       <div className="flex items-center justify-center max-w-[46vw] mx-auto">
-        <h1>Aqui vai a imagem</h1>
+        <Image
+          className="rounded-full"
+          src="/images/imagemedit4.png"
+          width={450}
+          height={300}
+          alt="eu"
+        />
       </div>
     </section>
   )

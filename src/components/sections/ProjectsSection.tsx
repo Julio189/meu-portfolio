@@ -49,9 +49,10 @@ const ProjectsSection = () => {
         <ProjectCard
           src="/images/portfolio6.jpg"
           alt="foto"
-          title="projeto"
+          title="Veja Mais"
           content="Nesse projeto projeto projeto pojeto"
           href="/"
+          cover
         />
       </div>
     </section>

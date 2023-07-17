@@ -19,6 +19,11 @@ module.exports = {
         'textColor': '#fff',
         'mainColor': '#20bbf8',
       },
+      screens: {
+        xs: '480px',
+        sm: '768px',
+        md: '1060px'
+      }
     },
   },
   plugins: [],

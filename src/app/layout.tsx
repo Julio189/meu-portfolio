@@ -20,12 +20,9 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="pt-br" className="scroll-smooth text-textColor">
+    <html lang="pt-br" className="text-textColor">
       <body className={inter.className}>
-        <FilterContextProvider>
-          <Header />
-          {children}
-        </FilterContextProvider>
+        <FilterContextProvider>{children}</FilterContextProvider>
       </body>
     </html>
   )

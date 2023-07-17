@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import { motion } from 'framer-motion'
+import Typewriter from 'typewriter-effect'
 
 import { FaInstagram, FaLinkedin } from 'react-icons/Fa'
 import { FiGithub } from 'react-icons/Fi'
@@ -21,8 +22,17 @@ const HomeSection = () => {
         <h1 className="text-5xl md:text-6xl font-bold leading-3 mb-10">
           Julio Cesar
         </h1>
-        <h3 className="text-2xl md:text-3xl font-bold mb-3">
-          Eu sou um <span className="text-mainColor">Desenvolvedor Web</span>
+        <h3 className="text-2xl md:text-3xl font-bold mb-3 flex gap-2">
+          Eu sou um
+          <span className="text-mainColor">
+            <Typewriter
+              options={{
+                strings: ['Desenvolvedor Web'],
+                autoStart: true,
+                loop: true,
+              }}
+            />
+          </span>
         </h3>
         <p className="text-base mb-5 max-w-xl text-center">
           Cursando Superior em Análise e Desenvolvimento de Sistemas e formado

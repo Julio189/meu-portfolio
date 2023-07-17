@@ -1,10 +1,8 @@
 'use client'
 
 import React, { useState } from 'react'
-import AnchorLink from 'react-anchor-link-smooth-scroll'
 import { AiOutlineClose } from 'react-icons/ai'
 
-import { PiMoonBold } from 'react-icons/pi'
 import { RiMenu3Line } from 'react-icons/ri'
 
 import NavbarItems from './NavbarItems'

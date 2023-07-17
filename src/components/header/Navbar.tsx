@@ -62,7 +62,7 @@ const Navbar = ({ selectedPage, setSelectedPage }: NavbarProps) => {
 
         {!isAboveSmallScreens && isMenuToogle && (
           <div className="fixed right-0 bottom-0 h-full bg-mainColor w-[300px]">
-            <div className="absolute right-4 -top-5 flex justify-end pl-12 pb-12 p-12">
+            <div className="absolute -right-1 -top-5 flex justify-end pl-12 pb-12 p-12">
               <button
                 className="rounded-full bg-textColor text-mainColor p-2"
                 onClick={() => setIsMenuToogle(!isMenuToogle)}

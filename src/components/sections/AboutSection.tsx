@@ -12,7 +12,7 @@ const AboutSection = ({ setSelectedPage }: AboutSectionProps) => {
   return (
     <section
       id="sobre"
-      className="min-h-screen bg-secondaryBgColor text-textColor pt-24  md:pt-40 px-[9%] pb-5 items-center"
+      className="min-h-screen bg-secondaryBgColor text-textColor pt-24 sm:pt-32 md:pt-40 px-[9%] pb-5 items-center"
     >
       <div className="sm:flex sm:justify-between">
         {isAbouveSmallScreens ? (

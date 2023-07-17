@@ -33,10 +33,10 @@ const ProjectCard = ({
           cover ? 'translate-y-0' : 'translate-y-full'
         }`}
       >
-        <h4 className="text-4xl font-bold">{title}</h4>
-        <p className="text-base mt-5 mb-2">{content}</p>
+        <h4 className="text-3xl sm:text-3xl md:text-2xl font-bold">{title}</h4>
+        <p className="text-base py-4 text-start overflow-hidden">{content}</p>
         <Link
-          className="inline-flex justify-center items-center w-12 h-12 rounded-full bg-textColor"
+          className="inline-flex justify-center items-center w-12 h-12 sm:w-12 md:w-10 sm:h-12 md:h-10 rounded-full bg-textColor mb-3"
           href={href}
         >
           <BiLinkExternal className="text-primaryBgColor" size={20} />

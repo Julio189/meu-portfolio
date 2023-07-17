@@ -4,18 +4,18 @@ import ProjectCard from '../cards/ProjectCard'
 const ProjectsSection = () => {
   return (
     <section
-      id="projects"
-      className="min-h-screen bg-secondaryBgColor text-textColor pt-24 px-[9%] pb-5 items-center flex flex-col justify-center"
+      id="projetos"
+      className="text-center min-h-screen bg-secondaryBgColor text-textColor pt-24 px-[9%] pb-5 items-center md:flex md:flex-col justify-center"
     >
-      <h1 className="text-5xl font-bold mb-8">
+      <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-8">
         Meus <span className="text-mainColor">Projetos</span>
       </h1>
-      <div className="grid grid-cols-3 items-center gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 items-center gap-6">
         <ProjectCard
           src="/images/portfolio1.jpg"
           alt="foto"
           title="projeto"
-          content="Nesse projeto projeto projeto pojeto"
+          content="Nesse projeto projeto projeto pojeto hdfjhasdjklfhkjasd lksdjflaslkdhf jhsdfkajsf dfhsakdjfaj s"
           href="/"
         />
         <ProjectCard
@@ -50,7 +50,7 @@ const ProjectsSection = () => {
           src="/images/portfolio6.jpg"
           alt="foto"
           title="Veja Mais"
-          content="Nesse projeto projeto projeto pojeto"
+          content=""
           href="/"
           cover
         />

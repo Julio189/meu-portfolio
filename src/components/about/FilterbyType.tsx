@@ -12,7 +12,7 @@ const FilterbyType = () => {
   }
   return (
     <>
-      <div className="flex mt-5 mb-10 gap-12">
+      <div className="flex mt-5 mb-6 gap-12">
         <TabLinks
           title="Skills"
           isSelect={type === FilterType.SKILLS}

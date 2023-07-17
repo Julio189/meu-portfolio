@@ -18,8 +18,8 @@ export default function Home() {
   return (
     <>
       <Navbar selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
-      <HomeSection setSelectedPage={setSelectedPage} />
-      <AboutSection />
+      <HomeSection />
+      <AboutSection setSelectedPage={setSelectedPage} />
       <MyServices />
       <ProjectsSection />
       <ContactSection />

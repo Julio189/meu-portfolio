@@ -1,6 +1,5 @@
 import Image from 'next/image'
 import { motion } from 'framer-motion'
-import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 import { FaInstagram, FaLinkedin } from 'react-icons/Fa'
 import { FiGithub } from 'react-icons/Fi'
@@ -9,11 +8,7 @@ import Button from '@/components/shared/Button'
 import SocialMedia from '@/components/shared/SocialMedia'
 import ButtonAchor from '../shared/ButtonAchor'
 
-interface HomeSectionProps {
-  setSelectedPage: any
-}
-
-const HomeSection = ({ setSelectedPage }: HomeSectionProps) => {
+const HomeSection = () => {
   return (
     <section
       className="bg-primaryBgColor text-textColor min-h-screen md:flex pt-24 md:pt-28 px-[9%] md:pb-5 items-center"

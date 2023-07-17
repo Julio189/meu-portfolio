@@ -12,9 +12,9 @@ const ContactSection = () => {
   return (
     <section
       className="bg-primaryBgColor text-textColor min-h-screen pt-32 px-[9%] pb-5 flex flex-col"
-      id="contact"
+      id="contato"
     >
-      <div className="flex">
+      <div className="sm:flex">
         <div className="flex flex-col basis-[40%]">
           <h1 className="text-5xl font-bold mb-10">
             Fale <span className="text-mainColor">Comigo</span>

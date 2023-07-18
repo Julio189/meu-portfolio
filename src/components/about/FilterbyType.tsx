@@ -25,38 +25,62 @@ const FilterbyType = () => {
         }}
       >
         <TabLinks
-          title="Skills"
+          title="Habilidades"
           isSelect={type === FilterType.SKILLS}
           onClick={() => handleChange(FilterType.SKILLS)}
         />
         <TabLinks
-          title="Expience"
-          isSelect={type === FilterType.EXPERIENCE}
-          onClick={() => handleChange(FilterType.EXPERIENCE)}
-        />
-        <TabLinks
-          title="Education"
+          title="Educação"
           isSelect={type === FilterType.EDUCATION}
           onClick={() => handleChange(FilterType.EDUCATION)}
+        />
+        <TabLinks
+          title="Programação"
+          isSelect={type === FilterType.EXPERIENCE}
+          onClick={() => handleChange(FilterType.EXPERIENCE)}
         />
       </motion.div>
 
       <TabContent isSelect={type === FilterType.SKILLS}>
-        <TabContentItem title="skilss" content="Programador" />
-        <TabContentItem title="skilss" content="Programador" />
-        <TabContentItem title="skillss" content="Programador" />
+        <TabContentItem
+          title="Desenvolvimento Web"
+          content="Criação e manutenção de sites"
+        />
+        <TabContentItem
+          title="Banco de Dados"
+          content="Criação e manutenção de banco de dados, api's"
+        />
+        <TabContentItem
+          title="E-commerce"
+          content="Criação de e-commerce, carrinho de compras"
+        />
       </TabContent>
 
       <TabContent isSelect={type === FilterType.EXPERIENCE}>
-        <TabContentItem title="expienci" content="Programador" />
-        <TabContentItem title="expien" content="Programador" />
-        <TabContentItem title="expien" content="Programador" />
+        <TabContentItem
+          title="Front - end"
+          content="Html, Css, Javascipt, Typescript"
+        />
+        <TabContentItem
+          title="Back - end"
+          content="Node.js, Php, MySql, Python"
+        />
+        <TabContentItem
+          title="Frameworks"
+          content="React.js, Next.js, Laravel"
+        />
       </TabContent>
 
       <TabContent isSelect={type === FilterType.EDUCATION}>
-        <TabContentItem title="education" content="Programador" />
-        <TabContentItem title="education" content="Programador" />
-        <TabContentItem title="education" content="Programador" />
+        <TabContentItem
+          title="Faculdade Anhanguera"
+          content="Análise e Desenvolvimento de Sistemas"
+        />
+        <TabContentItem
+          title="ETEC Presidente Vargas"
+          content="Desenvolvimento de Sistemas"
+        />
+        <TabContentItem title="CCAA" content="Inglês Intermediário" />
       </TabContent>
     </>
   )

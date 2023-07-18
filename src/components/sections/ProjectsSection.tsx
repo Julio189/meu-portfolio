@@ -37,46 +37,46 @@ const ProjectsSection = () => {
         {isAboveSmallSreen ? (
           <>
             <ProjectCard
-              src="/images/portfolio1.jpg"
+              src="/images/e-commerce2.jpg"
               alt="foto"
-              title="projeto"
-              content="Nesse projeto projeto projeto pojeto hdfjhasdjklfhkjasd lksdjflaslkdhf jhsdfkajsf dfhsakdjfaj s"
-              href="/"
+              title="E-commerce"
+              content="E-commerce com carrinho de compras utilizando uma api externa"
+              href="https://github.com/Julio189/desafio-font-end-consumo-api"
             />
             <ProjectCard
-              src="/images/portfolio2.jpg"
+              src="/images/validacaodedados.png"
               alt="foto"
-              title="projeto"
-              content="Nesse projeto projeto projeto pojeto"
-              href="/"
+              title="Validação de Dados"
+              content="Um fomulário de validação de senha e e-mail"
+              href="https://github.com/Julio189/validacao-de-dados"
             />
             <ProjectCard
-              src="/images/portfolio3.jpg"
+              src="/images/portfolio.jpg"
               alt="foto"
-              title="projeto"
-              content="Nesse projeto projeto projeto pojeto"
-              href="/"
+              title="Meu Portfólio"
+              content="Projeto que usei para criar esse portfólio"
+              href="https://github.com/Julio189/portfolio"
+            />
+            <ProjectCard
+              src="/images/site-vendas.jpg"
+              alt="foto"
+              title="Site de Vendas - Modelo"
+              content="Modelo de um site Imobiliária"
+              href="https://github.com/Julio189/site-responsivo"
+            />
+            <ProjectCard
+              src="/images/slide-show.jpg"
+              alt="foto"
+              title="Slide Automático"
+              content="Projeto de um slide automático e com controles de mudança"
+              href="https://github.com/Julio189/slide-show"
             />
             <ProjectCard
               src="/images/portfolio4.jpg"
               alt="foto"
-              title="projeto"
-              content="Nesse projeto projeto projeto pojeto"
-              href="/"
-            />
-            <ProjectCard
-              src="/images/portfolio5.jpg"
-              alt="foto"
-              title="projeto"
-              content="Nesse projeto projeto projeto pojeto"
-              href="/"
-            />
-            <ProjectCard
-              src="/images/portfolio6.jpg"
-              alt="foto"
-              title="Veja Mais"
+              title="Veja Mais!!"
               content=""
-              href="/"
+              href="https://github.com/Julio189?tab=repositories"
               cover
             />
           </>

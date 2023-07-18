@@ -84,10 +84,10 @@ const AboutSection = ({ setSelectedPage }: AboutSectionProps) => {
               visible: { opacity: 1 },
             }}
           >
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia
-            sed molestiae esse aliquam dolor minima quibusdam cupiditate eos ab
-            earum amet repellat, at placeat odit ullam. Fugit beatae corporis
-            similique.
+            Atualmente cursando superior em Análise e Desenvolvimento de
+            Sistemas e formado em Técnico em Desenvolvimento de Sistemas. Estou
+            em busca de uma oportunidade de estágio ou júnior na área de Web
+            Design, Desenvolvimento Web, Desenvolvimento de Banco de Dados
           </motion.p>
           <FilterbyType />
         </div>

@@ -37,17 +37,17 @@ const MyServices = () => {
         <ServicesCard
           icon={<HiCode size={50} />}
           title="Desenvolvedor Web"
-          content="Criação de sites tanto front end como back end, utilizando mais as linguagens javascript e php"
+          content="Criação e manutenção de sites tanto front end como back end"
         />
         <ServicesCard
           icon={<BsDatabaseCheck size={50} />}
           title="Banco de Dados"
-          content="Criação de sites tanto front end como back end, utilizando mais as linguagens javascript e php"
+          content="Criação e manutenção de bancos de dados e api's, api rest"
         />
         <ServicesCard
           icon={<FaComputer size={50} />}
           title="Softwares e Hardwares"
-          content="Criação de sites tanto front end como back end, utilizando mais as linguagens javascript e php"
+          content="Configuração de softwares e manuntenção de hardwares"
         />
       </motion.div>
     </section>

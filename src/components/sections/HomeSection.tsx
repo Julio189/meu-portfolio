@@ -93,6 +93,7 @@ const HomeSection = ({ setSelectedPage }: HomeSectionProps) => {
             name="Baixe o CV"
             href="/documents/Curriculo-Julio.pdf"
             cover
+            target="_blank"
           />
           <ButtonAchor
             onClick={() => setSelectedPage('contato')}

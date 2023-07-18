@@ -2,10 +2,13 @@ import React from 'react'
 import Button from '../shared/Button'
 import Inputs from '../shared/Inputs'
 import SocialMedia from '../shared/SocialMedia'
+
 import { FaLinkedin, FaInstagram } from 'react-icons/Fa'
 import { FiGithub } from 'react-icons/Fi'
 import { RiSendPlaneFill } from 'react-icons/ri'
 import { AiFillPhone } from 'react-icons/ai'
+import { motion } from 'framer-motion'
+
 import Link from 'next/link'
 
 const ContactSection = () => {
@@ -15,7 +18,17 @@ const ContactSection = () => {
       id="contato"
     >
       <div className="sm:flex">
-        <div className="flex flex-col basis-[40%]">
+        <motion.div
+          className="flex flex-col basis-[40%]"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.5 }}
+          transition={{ duration: 0.8 }}
+          variants={{
+            hidden: { opacity: 0, x: -50 },
+            visible: { opacity: 1, x: 0 },
+          }}
+        >
           <h1 className="text-5xl font-bold mb-10">
             Fale <span className="text-mainColor">Comigo</span>
           </h1>
@@ -41,8 +54,18 @@ const ContactSection = () => {
               icon={<FaInstagram size={20} />}
             />
           </div>
-        </div>
-        <div className="basis-[55%]">
+        </motion.div>
+        <motion.div
+          className="basis-[55%]"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.5 }}
+          transition={{ duration: 0.8 }}
+          variants={{
+            hidden: { opacity: 0, x: 50 },
+            visible: { opacity: 1, x: 0 },
+          }}
+        >
           <form
             action="#"
             className="w-full md:max-w-[43rem] mx-auto items-center"
@@ -85,7 +108,7 @@ const ContactSection = () => {
               <Button cover name="Sumit" href="#" />
             </div>
           </form>
-        </div>
+        </motion.div>
       </div>
     </section>
   )

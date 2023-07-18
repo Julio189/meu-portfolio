@@ -3,6 +3,7 @@ import TabContent from './TabContent'
 import TabContentItem from './TabContentItem'
 import TabLinks from './TabLinks'
 import { useFilter } from '@/hooks/useFilter'
+import { motion } from 'framer-motion'
 
 const FilterbyType = () => {
   const { type, setType } = useFilter()
@@ -12,7 +13,17 @@ const FilterbyType = () => {
   }
   return (
     <>
-      <div className="flex mt-5 mb-6 gap-12">
+      <motion.div
+        className="flex mt-5 mb-6 gap-12"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.5 }}
+        transition={{ duration: 0.8, delay: 0.2 }}
+        variants={{
+          hidden: { opacity: 0, x: -50 },
+          visible: { opacity: 1, x: 0 },
+        }}
+      >
         <TabLinks
           title="Skills"
           isSelect={type === FilterType.SKILLS}
@@ -28,7 +39,7 @@ const FilterbyType = () => {
           isSelect={type === FilterType.EDUCATION}
           onClick={() => handleChange(FilterType.EDUCATION)}
         />
-      </div>
+      </motion.div>
 
       <TabContent isSelect={type === FilterType.SKILLS}>
         <TabContentItem title="skilss" content="Programador" />

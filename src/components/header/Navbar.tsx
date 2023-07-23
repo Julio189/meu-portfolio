@@ -2,8 +2,8 @@
 
 import React, { useState } from 'react'
 import { AiOutlineClose } from 'react-icons/ai'
-
 import { RiMenu3Line } from 'react-icons/ri'
+import { motion } from 'framer-motion'
 
 import NavbarItems from './NavbarItems'
 import useMediaQuery from '@/hooks/useMediaQuery'
@@ -22,7 +22,17 @@ const Navbar = ({ selectedPage, setSelectedPage }: NavbarProps) => {
       <Logo />
       <div className="flex items center justify-center">
         {isAboveSmallScreens ? (
-          <ul className="flex gap-10">
+          <motion.ul
+            className="flex gap-10"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            transition={{ duration: 0.8 }}
+            variants={{
+              hidden: { opacity: 0, y: 50 },
+              visible: { opacity: 1, y: 0 },
+            }}
+          >
             <NavbarItems
               page="Início"
               selectedPage={selectedPage}
@@ -48,7 +58,7 @@ const Navbar = ({ selectedPage, setSelectedPage }: NavbarProps) => {
               selectedPage={selectedPage}
               setSelectedPage={setSelectedPage}
             />
-          </ul>
+          </motion.ul>
         ) : (
           <button
             className="rounded-full bg-mainColor text-textColor p-2"
@@ -59,7 +69,17 @@ const Navbar = ({ selectedPage, setSelectedPage }: NavbarProps) => {
         )}
 
         {!isAboveSmallScreens && isMenuToogle && (
-          <div className="fixed right-0 bottom-0 h-full bg-mainColor w-[300px]">
+          <motion.div
+            className="fixed right-0 bottom-0 h-full bg-mainColor w-[300px]"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            transition={{ duration: 0.6 }}
+            variants={{
+              hidden: { opacity: 0, x: 50 },
+              visible: { opacity: 1, x: 0 },
+            }}
+          >
             <div className="absolute -right-1 -top-5 flex justify-end pl-12 pb-12 p-12">
               <button
                 className="rounded-full bg-textColor text-mainColor p-2"
@@ -68,7 +88,17 @@ const Navbar = ({ selectedPage, setSelectedPage }: NavbarProps) => {
                 <AiOutlineClose />
               </button>
             </div>
-            <ul className="flex flex-col gap-10 ml-[33%] mt-28">
+            <motion.ul
+              className="flex flex-col gap-10 ml-[33%] mt-28"
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.5 }}
+              transition={{ duration: 1 }}
+              variants={{
+                hidden: { opacity: 0, x: 50 },
+                visible: { opacity: 1, x: 0 },
+              }}
+            >
               <NavbarItems
                 page="Início"
                 selectedPage={selectedPage}
@@ -94,8 +124,8 @@ const Navbar = ({ selectedPage, setSelectedPage }: NavbarProps) => {
                 selectedPage={selectedPage}
                 setSelectedPage={setSelectedPage}
               />
-            </ul>
-          </div>
+            </motion.ul>
+          </motion.div>
         )}
       </div>
     </header>

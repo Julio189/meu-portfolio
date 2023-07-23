@@ -34,29 +34,9 @@ const FilterbyType = () => {
           isSelect={type === FilterType.EDUCATION}
           onClick={() => handleChange(FilterType.EDUCATION)}
         />
-        <TabLinks
-          title="Programação"
-          isSelect={type === FilterType.EXPERIENCE}
-          onClick={() => handleChange(FilterType.EXPERIENCE)}
-        />
       </motion.div>
 
       <TabContent isSelect={type === FilterType.SKILLS}>
-        <TabContentItem
-          title="Desenvolvimento Web"
-          content="Criação e manutenção de sites"
-        />
-        <TabContentItem
-          title="Banco de Dados"
-          content="Criação e manutenção de banco de dados, api's"
-        />
-        <TabContentItem
-          title="E-commerce"
-          content="Criação de e-commerce, carrinho de compras"
-        />
-      </TabContent>
-
-      <TabContent isSelect={type === FilterType.EXPERIENCE}>
         <TabContentItem
           title="Front - end"
           content="Html, Css, Javascipt, Typescript"

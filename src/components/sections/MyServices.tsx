@@ -37,7 +37,7 @@ const MyServices = () => {
         <ServicesCard
           icon={<HiCode size={50} />}
           title="Desenvolvedor Web"
-          content="Criação e manutenção de sites tanto front end como back end"
+          content="Criação e manutenção web tanto front end como back end"
         />
         <ServicesCard
           icon={<BsDatabaseCheck size={50} />}

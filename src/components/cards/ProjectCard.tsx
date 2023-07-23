@@ -38,6 +38,7 @@ const ProjectCard = ({
         <Link
           className="inline-flex justify-center items-center w-12 h-12 sm:w-12 md:w-10 sm:h-12 md:h-10 rounded-full bg-textColor mb-3"
           href={href}
+          target="_blank"
         >
           <BiLinkExternal className="text-primaryBgColor" size={20} />
         </Link>

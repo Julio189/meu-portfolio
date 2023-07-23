@@ -28,10 +28,10 @@ const ProjectsSection = () => {
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.5 }}
-        transition={{ duration: 0.8, delay: 0.3 }}
+        transition={{ duration: 1, delay: 0.3 }}
         variants={{
-          hidden: { opacity: 0 },
-          visible: { opacity: 1 },
+          hidden: { opacity: 0, y: 50 },
+          visible: { opacity: 1, y: 0 },
         }}
       >
         {isAboveSmallSreen ? (

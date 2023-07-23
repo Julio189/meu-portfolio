@@ -2,8 +2,9 @@ import Image from 'next/image'
 import { motion } from 'framer-motion'
 import Typewriter from 'typewriter-effect'
 
-import { FaInstagram, FaLinkedin } from 'react-icons/Fa'
-import { FiGithub } from 'react-icons/Fi'
+import { FaInstagram } from '@react-icons/all-files/fa/FaInstagram'
+import { FaLinkedin } from '@react-icons/all-files/fa/FaLinkedin'
+import { FiGithub } from '@react-icons/all-files/fi/FiGithub'
 
 import Button from '@/components/shared/Button'
 import SocialMedia from '@/components/shared/SocialMedia'

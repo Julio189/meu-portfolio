@@ -1,8 +1,8 @@
 'use client'
 
 import React, { useState } from 'react'
-import { AiOutlineClose } from 'react-icons/ai'
-import { RiMenu3Line } from 'react-icons/ri'
+import { AiOutlineClose } from '@react-icons/all-files/ai/AiOutlineClose'
+import { RiMenu3Line } from '@react-icons/all-files/ri/RiMenu3Line'
 import { motion } from 'framer-motion'
 
 import NavbarItems from './NavbarItems'

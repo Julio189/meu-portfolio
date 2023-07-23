@@ -2,14 +2,13 @@ import React, { useState } from 'react'
 import Inputs from '../shared/Inputs'
 import SocialMedia from '../shared/SocialMedia'
 
-import { FaLinkedin, FaInstagram } from 'react-icons/Fa'
-import { FiGithub } from 'react-icons/Fi'
+import { FaInstagram } from '@react-icons/all-files/fa/FaInstagram'
+import { FaLinkedin } from '@react-icons/all-files/fa/FaLinkedin'
+import { FiGithub } from '@react-icons/all-files/fi/FiGithub'
 import { RiSendPlaneFill } from 'react-icons/ri'
 import { AiFillPhone } from 'react-icons/ai'
 import { motion } from 'framer-motion'
 import emailjs from '@emailjs/browser'
-
-import Link from 'next/link'
 
 const ContactSection = () => {
   const [name, setName] = useState('')

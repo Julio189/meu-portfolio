@@ -38,7 +38,7 @@ const HomeSection = ({ setSelectedPage }: HomeSectionProps) => {
           <h1 className="text-5xl md:text-6xl font-bold leading-3 mb-10">
             Julio Cesar
           </h1>
-          <h3 className="text-2xl md:text-3xl font-bold mb-3 flex gap-2">
+          <h3 className="text-2xl md:text-3xl font-bold mb-3 text-center sm:text-start sm:flex gap-2">
             Eu sou um
             <span className="text-mainColor">
               <Typewriter

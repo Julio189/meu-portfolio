@@ -84,7 +84,7 @@ const ContactSection = () => {
               icon={<FiGithub size={20} />}
             />
             <SocialMedia
-              href="https://www.instagram.com/julio_tech.1/"
+              href="https://www.instagram.com/julio_jesus013/"
               icon={<FaInstagram size={20} />}
             />
           </div>
